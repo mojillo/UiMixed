@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23094" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23084"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="ViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="ViewController" customModule="variousLogins" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="1852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Tf4-pu-rzt">
+                                <rect key="frame" x="0.0" y="59" width="393" height="1759"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dIa-1j-Onx">
+                                        <rect key="frame" x="15" y="120" width="363" height="36"/>
+                                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="Login Screens">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="showLoginScreensTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="joB-ij-3z0"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="dIa-1j-Onx" firstAttribute="top" secondItem="Tf4-pu-rzt" secondAttribute="top" constant="120" id="6o8-6T-BRd"/>
+                                    <constraint firstAttribute="trailing" secondItem="dIa-1j-Onx" secondAttribute="trailing" constant="15" id="AMg-rI-r2P"/>
+                                    <constraint firstItem="dIa-1j-Onx" firstAttribute="centerX" secondItem="Tf4-pu-rzt" secondAttribute="centerX" id="BEX-1H-fN4"/>
+                                    <constraint firstItem="dIa-1j-Onx" firstAttribute="leading" secondItem="Tf4-pu-rzt" secondAttribute="leading" constant="15" id="cbL-gj-lgY"/>
+                                    <constraint firstAttribute="bottom" secondItem="dIa-1j-Onx" secondAttribute="bottom" constant="1602" id="lPv-Re-h6k"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Tf4-pu-rzt" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="E58-Jc-70d"/>
+                            <constraint firstItem="Tf4-pu-rzt" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="OWo-y5-t7y"/>
+                            <constraint firstItem="Tf4-pu-rzt" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="YzN-Nw-Dqp"/>
+                            <constraint firstItem="Tf4-pu-rzt" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="paP-gA-Fo3"/>
+                        </constraints>
+                    </view>
+                    <size key="freeformSize" width="393" height="1852"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="14.503816793893129" y="-27.464788732394368"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
